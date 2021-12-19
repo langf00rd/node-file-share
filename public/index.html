@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.IO chat</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="display: flex;align-items: center;justify-content: center; flex-direction: column; background: #00e5ff;height: 100vh;width: 100vw;">
+        <div id="files-num"></div>
+        <input type="file" id="file-input" onchange="fileSelected()">
+        <button id="share-btn">Share this file</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
